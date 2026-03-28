@@ -1,1 +1,19 @@
-npm install node-telegram-bot-api axios puppeteer socks-proxy-agent https-proxy-agent
+{
+  "name": "tool-otp",
+  "version": "1.0.0",
+  "description": "Telegram Bot with Puppeteer and Proxy",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "https-proxy-agent": "^7.0.0",
+    "node-telegram-bot-api": "^0.64.0",
+    "puppeteer": "^22.0.0",
+    "socks-proxy-agent": "^8.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
