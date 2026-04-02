@@ -12,6 +12,7 @@ import sys
 import socket
 import struct
 import string
+import nest_asyncio
 import asyncio
 from datetime import datetime
 from pathlib import Path
@@ -929,6 +930,7 @@ async def main():
     await bot.application.run_polling()
 
 if __name__ == '__main__':
+    nest_asyncio.apply()
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
